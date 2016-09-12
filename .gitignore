@@ -32,3 +32,5 @@ lib
 *.exe
 *.out
 *.app
+
+dockerrun.ps1
