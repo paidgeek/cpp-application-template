@@ -1,7 +1,7 @@
 #
 # Project Properties
 #
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8.11)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8.7)
 PROJECT(projectname)
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++0x")
 SET(APPLICATION_NAME "Project Name")
@@ -66,7 +66,6 @@ ENDFOREACH (CONFIGINPUT ${CONFIGINPUTS})
 
 # Add thirdparty directories first!
 ADD_SUBDIRECTORY(third_party/googletest)
-INCLUDE_DIRECTORIES(third_party/spdlog/include)
 ADD_SUBDIRECTORY(src)
 ADD_SUBDIRECTORY(test)
 
