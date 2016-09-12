@@ -1,5 +1,7 @@
 .idea
 build
+bin
+lib
 
 # Compiled Object files
 *.slo
