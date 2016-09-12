@@ -1,5 +1,8 @@
 #include <iostream>
+#include "person.h"
 
 int main(int argc, char *argv[]) {
-  std::cout << "Hello World!" << std::endl;
+  Person p{"Bobby"};
+
+  std::cout << "Hello, " << p.GetName() << "!" << std::endl;
 }

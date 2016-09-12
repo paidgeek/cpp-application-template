@@ -1,9 +1,6 @@
 FILE(GLOB_RECURSE test_SRCS *.cpp *.cxx *.cc *.C *.c *.h *.hpp)
-SET(test_LIBS ${Boost_LIBRARIES})
+SET(test_LIBS "")
 SET(test_BIN ${PROJECT_NAME}-unittests)
-SET(CMAKE_CXX_FLAGS "-g -O0 -Wall -fprofile-arcs -ftest-coverage")
-SET(CMAKE_C_FLAGS "-g -O0 -Wall -W -fprofile-arcs -ftest-coverage")
-SET(CMAKE_EXE_LINKER_FLAGS "-fprofile-arcs -ftest-coverage")
 
 INCLUDE_DIRECTORIES("${gmock_SOURCE_DIR}/include"
     "${gmock_SOURCE_DIR}"
